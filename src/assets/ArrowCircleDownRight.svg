@@ -1,0 +1,11 @@
+<svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="ArrowCircleDownRight">
+<path id="Vector" d="M0.5 16C0.5 24.8366 7.66344 32 16.5 32C25.3366 32 32.5 24.8366 32.5 16C32.5 7.16344 25.3366 0 16.5 0C7.66344 0 0.5 7.16344 0.5 16Z" fill="#858585" fill-opacity="0.47"/>
+<path id="Vector_2" d="M16.5 28C23.1274 28 28.5 22.6274 28.5 16C28.5 9.37258 23.1274 4 16.5 4C9.87258 4 4.5 9.37258 4.5 16C4.5 22.6274 9.87258 28 16.5 28Z" fill="#858585" fill-opacity="0.47" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<g id="Vector_3">
+<path d="M14 19.5H20V13.5" fill="#858585" fill-opacity="0.47"/>
+<path d="M14 19.5H20V13.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<path id="Vector_4" d="M13 12.5L20 19.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</svg>

@@ -1,0 +1,175 @@
+.bg1 {
+  /* background-image: url("\src\assets\mainpageclouds.svg"); */
+  background-image: url("../../assets/mainpageclouds.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.bg2 {
+  /* background-image: url("D:\Prymer_Dev\Prymr_Development_Akshada\src\assets\Deep_Blue_Sky_Clouds_Timelapse_Free_Footage_Full_HD_1080p.svg"); */
+  background-image: url("../../assets/Deep_Blue_Sky_Clouds_Timelapse_Free_Footage_Full_HD_1080p.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.bg3 {
+  /* background-image: url("D:\Prymer_Dev\Prymr_Development_Akshada\src\assets\gray_clouds.svg"); */
+  background-image: url("../../assets/gray_clouds.svg");
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.logo {
+  background-image: url("../../assets/prymerLogo.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 120px;
+  height: 120px;
+}
+
+.text1 {
+  font-family: Nunito;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 35.46px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.text2 {
+  font-family: Nunito;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 21.82px;
+  text-align: center;
+  color: #e2e2e2;
+}
+
+.slider {
+  margin-top: 10px;
+  margin-left: 35%;
+  width: (56px);
+  height: (50px);
+  padding: 5px 10px 5px 10px;
+  gap: 3px;
+  opacity: 0px;
+}
+
+.border {
+  border: solid;
+  border-color: silver;
+}
+
+::-webkit-scrollbar {
+  width: 0px; /* Width of the vertical scrollbar */
+  height: 0px; /* Height of the horizontal scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Color of the scrollbar track */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888; /* Color of the scrollbar thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Color of the scrollbar thumb on hover */
+}
+
+@media screen and (max-width: 1440px) and (max-height: 824px) {
+  .h {
+    height: 100vh;
+  }
+
+  .logo {
+    justify-content: center;
+  }
+}
+
+.slick-prev,
+.slick-next {
+  display: none !important;
+}
+
+.slick-dots {
+  top: 310px; /* Adjust as needed to position dots vertically */
+  text-align: center;
+}
+
+.slick-dots li {
+  margin: 0 5px; /* Adjust the spacing between dots */
+}
+
+.slick-dots li button:before {
+  color: white; /* Change to desired color */
+  font-size: 12px; /* Adjust the size of the dots */
+}
+
+.slick-dots {
+  text-align: center;
+}
+
+@media (max-width: 376px) {
+  .slick-dots {
+    top: 300px;
+  }
+  .wallet {
+    margin-top: 80px;
+  }
+
+  .main-page {
+    margin-top: -30px;
+  }
+
+  .fixed-wallet {
+    left: 50px;
+  }
+}
+
+@media (min-width: 376px) and (max-width: 576px) {
+  .slick-dots {
+    top: 400px;
+  }
+  .wallet {
+    margin-top: 100px;
+  }
+  .main-page {
+    margin-top: 70px;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+  .slick-dots {
+    bottom: 15px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .slick-dots {
+    top: 390px;
+  }
+  .wallet {
+    margin-top: 150px;
+  }
+
+  .main-page {
+    margin-top: -50px;
+  }
+}
+
+@media (min-width: 1023px) and (max-width: 1365px) {
+  .slick-dots {
+    top: 450px;
+  }
+  .wallet {
+    margin-top: 330px;
+  }
+
+  .main-page {
+    margin-top: -50px;
+  }
+}
