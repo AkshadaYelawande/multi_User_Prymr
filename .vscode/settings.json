@@ -1,0 +1,30 @@
+{
+  "cSpell.words": [
+    "Baording",
+    "Buttongroups",
+<<<<<<< Updated upstream
+    "forgetpassword",
+    "Prymr",
+    "setvalidation",
+    "signin",
+    "signup",
+    "tailwindcss",
+    "Thirdweb",
+    "Timelapse",
+    "toastify",
+    "TTFB"
+=======
+    "Configforgetpassword",
+    "emailsent",
+    "Feild",
+    "forgetpassword",
+    "Formik",
+    "Prymr",
+    "setvalidation",
+    "Signin",
+    "signup",
+    "Specail",
+    "toastify"
+>>>>>>> Stashed changes
+  ]
+}

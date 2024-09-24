@@ -1,0 +1,305 @@
+.icon-container {
+  display: flex;
+  transition: transform 0.3s ease;
+}
+
+.icon-container.slide-left {
+  transform: translateX(-150px);
+  /* / Adjust this value as needed / */
+}
+.image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.image-container img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+.color-panel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #4b4b4b;
+  border-radius: 0.25rem;
+  height: 40px;
+  transition: opacity 0.3s ease;
+  opacity: 0;
+  initially: hidden;
+}
+
+/* .custom-carousel .control-arrow,
+.custom-carousel .control-dots {
+  z-index: 1;
+  display: flex;
+  align-items: center;
+} */
+/* Customize the position of the carousel indicators (dots) */
+
+.custom-carousel {
+  flex: 1;
+}
+
+.custom-carousel .slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.custom-carousel .slide img {
+  max-height: 100%;
+  width: auto;
+  object-fit: contain;
+
+  margin: auto;
+}
+
+.custom-carousel .control-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border-radius: 50%;
+  cursor: pointer;
+  position: absolute;
+  z-index: 2;
+  margin: 0;
+}
+
+.custom-carousel .control-prev {
+  left: 10px;
+}
+
+.custom-carousel .control-next {
+  right: 10px;
+}
+
+.custom-carousel .control-prev,
+.custom-carousel .control-next {
+  transform: translateY(500%);
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border-radius: 50%;
+  cursor: pointer;
+  position: absolute;
+  z-index: 2;
+}
+
+.custom-carousel .control-arrow:before {
+  font-size: 24px; /* Size of the arrow icons */
+  color: #fff; /* Arrow color */
+}
+
+.custom-carousel .control-dots .dot {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  margin: 0 5px;
+  display: inline-block;
+}
+
+.custom-carousel .control-dots .dot.selected {
+  background-color: white;
+}
+
+.add-content-btn {
+  position: absolute;
+  bottom: 10px;
+  /* / Position above the carousel dots / */
+  right: 10px;
+  z-index: 2;
+  /* / Ensure it's above the carousel image / */
+  /* background-color: rgba(0, 0, 0, 0.5); 
+  padding: 8px 16px; */
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.layer-swiper .swiper-scrollbar {
+  background-color: rgba(200, 186, 186, 0.1);
+  height: 10px;
+  /* / bottom: -50px; / */
+  right: 0;
+  width: 100%;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.layer-swiper .swiper-scrollbar-drag {
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 50px;
+  height: 100%;
+}
+
+.layer-swiper .swiper-wrapper {
+  padding-bottom: 25px;
+}
+
+/* / Add a larger touch target for mobile / */
+@media (pointer: coarse) {
+  .layer-swiper .swiper-scrollbar {
+    height: 20px;
+    /* / bottom: -30px; / */
+  }
+
+  .layer-swiper .swiper-scrollbar::after {
+    content: "";
+    position: absolute;
+    /* / top: -10px; / */
+    left: 0;
+    right: 0;
+    /* / bottom: -10px; / */
+  }
+}
+
+.add-content-page {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.carousel-image-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.carousel-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.delete-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.delete-icon:hover {
+  opacity: 1;
+}
+
+/* / Responsive adjustments / */
+@media (max-width: 768px) {
+  .delete-icon {
+    width: 20px;
+    height: 20px;
+    top: 50px;
+    right: 5px;
+  }
+}
+.carousel-root.custom-carousel {
+  place-content: center;
+}
+.carousel-container .carousel.carousel-slider {
+  height: 100%;
+}
+
+.carousel-container .carousel .slide {
+  background: transparent;
+}
+button.control-arrow.control-next {
+  margin-top: 20vh;
+  border-color: black solid;
+}
+
+.custom-carousel .control-prev.control-arrow {
+  left: 10px; /* Adjust this value to change the distance from the left edge */
+}
+
+.custom-carousel .control-next.control-arrow {
+  right: 10px; /* Adjust this value to change the distance from the right edge */
+}
+
+/* Optional: Style the arrows to make them look better */
+.custom-carousel .control-arrow:before {
+  font-size: 24px; /* Adjust the size of the arrow icons */
+  color: #fff; /* Change the arrow color */
+}
+.carousel-root {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.carousel .control-arrow:hover {
+  opacity: 1;
+}
+
+.custom-carousel .control-prev {
+  left: 10px;
+}
+
+.custom-carousel .control-next {
+  right: 10px;
+}
+.carousel .control-arrow:before {
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+}
+
+.carousel .control-prev.control-arrow:before {
+  border-right: 8px solid #fff;
+  margin-left: -4px;
+}
+
+.carousel .control-next.control-arrow:before {
+  border-left: 8px solid #fff;
+  margin-right: -4px;
+}
+
+.carousel .slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+}
+
+.carousel .slide img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.carousel-container {
+  display: flex;
+  align-items: center; /* Centers items vertically */
+  justify-content: space-between; /* Centers items horizontally if needed */
+  position: relative;
+  height: 100%;
+}
+.custom-carousel .control-arrow:hover {
+  opacity: 1;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.7
+  ); /* Optional: change background color on hover */
+}

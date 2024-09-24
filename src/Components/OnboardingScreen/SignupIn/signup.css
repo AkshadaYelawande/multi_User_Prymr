@@ -1,0 +1,15 @@
+form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+input {
+  width: 100%;
+  margin-bottom: 10px;
+}
+button {
+  width: 100%;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}

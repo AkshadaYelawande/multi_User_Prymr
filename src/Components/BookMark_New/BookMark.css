@@ -1,0 +1,242 @@
+.bookmark-container {
+  background-color: #000000;
+  color: white;
+  padding: 16px;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.bookmark-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.header-icons {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.header-options {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.back-button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.prymr-logo {
+  font-size: 24px;
+  font-weight: 900;
+  margin-left: 8px;
+}
+
+.header-icons span {
+  cursor: pointer;
+}
+
+.content-container {
+  flex: 1;
+  overflow-y: auto;
+  margin-bottom: 16px;
+ 
+  scrollbar-width: none;
+
+  -ms-overflow-style: none; 
+  position: relative;
+  z-index: 1;
+}
+
+.content-container::-webkit-scrollbar {
+  display: none; 
+}
+
+.popup-visible {
+  margin-top: 200px;
+}
+
+.collections {
+  margin-top: 16px;
+}
+
+.collections h2 {
+  margin: 0;
+}
+
+.collections p {
+  margin: 0;
+  color: #bbb;
+}
+
+.bookmarks-list {
+  margin-top: 16px;
+}
+
+.bookmark {
+  background-color: #444;
+  margin-top: 16px;
+  padding: 8px;
+  border-radius: 8px;
+}
+
+.bookmark-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bookmark-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.lock-icon {
+  font-size: 16px;
+}
+
+.more-icon {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.bookmark-images img {
+  height: 100px;
+  width: 100px;
+  border-radius: 4px;
+}
+
+.bookmark-images {
+  display: flex;
+  gap: 8px;
+  margin-top: 8px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+}
+
+.bookmark-images::-webkit-scrollbar {
+  display: none;
+}
+
+.new-folder {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  background-color: #555;
+  padding: 16px;
+  border-radius: 8px;
+  position: fixed;
+  bottom: 0;
+  width: calc(100% - 32px);
+  z-index: 1;
+}
+
+.new-folder span {
+  color: white;
+  font-size: 18px;
+}
+
+.collections-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 2.5rem;
+}
+
+.collections-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.collections-right span {
+  cursor: pointer;
+}
+
+.selected-icon {
+  color: yellow;
+}
+
+.addFolder-popup {
+  position: fixed;
+  top: 150px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(100% - 32px);
+  padding: 16px;
+  background-color: #666;
+  border-radius: 8px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.addFolder-popup input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 8px;
+  border: none;
+  border-radius: 4px;
+  background: transparent;
+  outline: none;
+  color: #000000;
+}
+
+.addFolder-popup input[type="text"]::placeholder {
+  color: rgb(0, 0, 0);
+  opacity: 1; 
+}
+
+.addFolder-popup p {
+  margin: 0;
+  text-align: center;
+}
+
+.folder-popup-header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.folder-popup-header button {
+  width: 100px;
+  background-color: white;
+  color: black;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.close-icon {
+  cursor: pointer;
+  font-size: 2rem;
+}
+
+.folder-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}

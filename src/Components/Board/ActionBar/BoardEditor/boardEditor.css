@@ -1,0 +1,8 @@
+.lines {
+  width: 100%; /* Or whatever width you want */
+}
+
+.line {
+  height: 1px;
+  background-color: black; /* Or your desired line color */
+}

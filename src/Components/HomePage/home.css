@@ -1,0 +1,211 @@
+.slick-prev,
+.slick-next {
+  display: none !important;
+}
+
+.slick-dots {
+  top: 510px;
+  text-align: center;
+}
+
+.slick-dots li {
+  margin: 0 5px;
+}
+
+.slick-dots li button:before {
+  color: white;
+  font-size: 12px;
+}
+
+.slick-dots {
+  text-align: center;
+  display: none !important;
+}
+
+@media (max-width: 376px) {
+  .slick-dots {
+    top: 465px;
+  }
+}
+
+@media (min-width: 376px) and (max-width: 576px) {
+  .slick-dots {
+    top: 585px;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+  .slick-dots {
+    bottom: 15px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .slick-dots {
+    top: 390px;
+  }
+  .wallet {
+    margin-top: 150px;
+  }
+
+  .main-page {
+    margin-top: -50px;
+  }
+}
+
+@media (min-width: 1023px) and (max-width: 1365px) {
+  .slick-dots {
+    top: 450px;
+  }
+  .wallet {
+    margin-top: 330px;
+  }
+
+  .main-page {
+    margin-top: -50px;
+  }
+}
+@media (min-width: 1023px) and (max-width: 1365px) {
+  .container {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
+
+@media (min-width: 1440px) and (max-width: 1440px) {
+  .container {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
+
+@media (min-width: 1440px) and (max-width: 1640px) {
+  .container {
+    padding-left: 130px;
+    padding-right: 100px;
+  }
+}
+@media (min-width: 1650px) and (max-width: 2560px) {
+  .container {
+    padding-left: 200px;
+    padding-right: 110px;
+  }
+}
+
+[contenteditable]:empty:before {
+  content: attr(data-placeholder);
+  color: gray;
+  font-style: italic;
+}
+
+.my-masonry-grid {
+  display: flex;
+}
+.my-masonry-grid_column {
+  padding-left: 6px;
+  background-clip: padding-box;
+}
+.no-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.custom-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: #888 #2d2d2d;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #2d2d2d;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 3px;
+}
+.capture-border {
+  position: absolute;
+  border: 2px solid red; /* Red border for visibility */
+  pointer-events: none; /* Ignore mouse events */
+  z-index: 20; /* Ensure it is above other elements */
+  display: none; /* Hidden by default */
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.bottom-4 {
+  bottom: 16px;
+}
+
+.right-4 {
+  right: 16px;
+}
+
+.shadow-lg {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.z-30 {
+  z-index: 30;
+}
+
+.z-20 {
+  z-index: 20;
+}
+
+/* //longpresspopup */
+/* Add this CSS to style the scrollbar inside the popup */
+.popup-container {
+  position: relative;
+  overflow: hidden; /* Ensure the popup content stays within bounds */
+}
+
+.popup-content {
+  overflow-y: auto; /* Allow vertical scrolling */
+  overflow-x: hidden; /* Disable horizontal scrolling */
+  max-height: auto; /* Adjust height as needed */
+
+  scrollbar-color: #ffffff transparent;
+}
+
+.popup-content::-webkit-scrollbar-thumb {
+  border-radius: 10px; /* Rounded corners for better aesthetics */
+}
+
+.popup-content::-webkit-scrollbar-track {
+  background: transparent; /* Transparent track for cleaner look */
+}
+
+/* Hide scrollbar for all browsers but keep scrolling functionality */
+.popup-container {
+  position: relative;
+  overflow: hidden; /* Ensure the popup content stays within bounds */
+}
+
+.popup-content {
+  overflow-y: auto; /* Allow vertical scrolling */
+  scrollbar-width: none; /* For Firefox */
+  -ms-overflow-style: none; /* For Internet Explorer and Edge */
+}
+
+/* Hide scrollbar for WebKit-based browsers (Chrome, Safari) */
+.popup-content::-webkit-scrollbar {
+  display: none; /* Hide the scrollbar */
+}
+
+.text-\[\#c9c9c9\].text-base.font-bold.font-\[\'Nunito\'\].leading-tight.overflow-y-auto {
+  width: -webkit-fill-available;
+}
